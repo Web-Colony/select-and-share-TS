@@ -6,15 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Understanding TypeScript</title>
     <script src="dist/bundle.js" defer></script>
-    <link rel="stylesheet" href="app.css">
+    <script
+      src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css"
+      type="text/css"
+    />
   </head>
   <body>
     <div id="map">
-      <p>Please enter an address!</p>
+      <p>Please Enter coordinations!</p>
     </div>
     <form>
-      <input type="text" id="address">
-      <button type="submit">SEARCH ADDRESS</button>
+      <label for="lat">Latitude</label>
+      <input type="number" id="lat" min="-90" max="90" />
+      <label for="long">Longitude</label>
+      <input type="number" id="long" min="-180" max="180" />
+
+      <button type="submit">SEARCH</button>
     </form>
   </body>
 </html>
