@@ -7,6 +7,6 @@ It's a simple app for showing a coordinates on map using openlayers
 
 
 ## Tech Concepts
-[OpenLayers](https://openlayers.org/)
+[OpenLayers](https://openlayers.org/) - [webpack](https://webpack.js.org/)
 
 TypeScript => declare - external @types
